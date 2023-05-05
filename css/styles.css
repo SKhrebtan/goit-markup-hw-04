@@ -1,0 +1,378 @@
+/* Primary color - #434455 */
+/* Seconadray color - #2E2F42*/
+/* accent color - #4D5AE5 */
+/* white color - #FFFFFF */
+
+:root {
+    --primary-color: #434455;
+    --secondary-color: #2E2F42;
+    --accent-color: #4D5AE5;
+    --white-color: #FFFFFF;
+    --grey-color: #F4F4FD;
+    --active-color: #404bbf;
+    --border-color: #E7E9FC;
+}
+
+body {
+    background-color: var(--white-color);
+    color: var(--primary-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.02em;
+    line-height: 1.5;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+
+
+.ourteam {
+    background-color: var(--grey-color);
+    padding-bottom: 120px;
+    text-align: center;
+}
+
+.hidden-title {
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.list,
+.feature-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* Header */
+
+.page-header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.page-header .container {
+    display: flex;
+}
+
+.logo {
+    color: var(--accent-color);
+
+    font-family: Raleway, sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav .logo.link {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin-right: 76px;
+}
+
+.logo .studio {
+    color: var(--secondary-color);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav .list {
+    display: flex;
+    gap: 40px;
+    }
+
+.address .list {
+    gap: 40px;
+}
+
+
+.list .link,
+.list-portfolio .link {
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-decoration: none;
+}
+
+.nav .link:hover,
+.nav .link:focus,
+.address .link:hover,
+.address .link:focus {
+    color: var(--active-color);
+}
+
+.address .list {
+    display: flex;
+}
+
+.address {
+    display: flex;
+    margin-left: auto;
+    font-style: normal;
+}
+
+.address .link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1.5;
+
+}
+
+/* List */
+
+.list .title,
+.title {
+    color: var(--secondary-color);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+}
+
+/* Hero section */
+
+.section.hero {   
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding-top: 188px;
+    padding-bottom: 188px;
+}
+
+.hero-title {
+    color: var(--white-color);
+    font-size: 56px;
+    line-height: 1.07;
+    letter-spacing: 0.02em;
+    max-width: 496px;
+    margin-top: 0;
+    margin-bottom: 48px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+/* Sections */
+
+.section .list {
+    display: flex;
+    gap: 24px;
+}
+
+.section.advantages .li-item {
+    flex-basis: calc((100%-72px) /4);
+}
+
+.section.advantages .title {
+    margin-bottom: 8px;
+}
+
+.section.advantages .text{
+    margin: 0;
+    padding: 0;
+}
+
+.section.propositions .li-item {
+    flex-basis: calc((100%-48px) / 3);
+}
+
+
+.section.ourteam .li-item {
+    flex-basis: calc((100%-72px) /4);
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.section.propositions {
+    padding-top: 0;
+}
+
+.section-title {
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    text-transform: capitalize;
+    color: var(--secondary-color)
+}
+
+
+.section-title {
+    margin-bottom: 72px;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: var(--primary-color);
+}
+
+/* Button */
+
+.button {
+    cursor: pointer;
+    display: block;
+    border: 1px solid transparent;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.button.primary {
+    min-width: 169px;
+    border: none;
+    height: 56px;
+    border-radius: 4px;
+    padding: 16px 32px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: var(--accent-color);
+    color: var(--white-color)
+}
+
+.button.primary:hover,
+.button.primary:focus {
+    background-color: var(--active-color);
+}
+
+.button.secondary {
+    border-color: var(--border-color);
+    height: 48px;
+    border-radius: 4px;
+    padding: 12px 24px;
+    background-color: var(--grey-color);
+    color: var(--accent-color);
+}
+
+.button.secondary:hover,
+.button.secondary:focus {
+    background-color: var(--active-color);
+    color: var(--white-color);
+    border: 1px solid transparent;
+}
+
+/* Our team */
+.ourteam .li-item {
+    background-color: var(--white-color);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.worker {
+    padding: 32px 16px;
+    text-align: center;
+}
+
+.worker .title {
+    text-align: center;
+    margin-bottom: 8px;
+    }
+
+.worker .text {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Footer */
+
+.footer {
+    background-color: var(--secondary-color);
+    }
+
+.footer {
+    padding: 100px 0;
+}
+
+.footer .text {
+    color: var(--grey-color);
+    max-width: 264px;
+    margin: 0;
+}
+
+.footer .studio {
+    color: var(--grey-color);
+}
+
+.footer .logo {
+    color: var(--accent-color);
+    display: inline-block;
+    margin-bottom: 16px;
+ }
+
+/* Container */
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    }
+
+/* Portfolio Hero */
+
+.section-hero-portfolio {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.filter-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
+.list-portfolio {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 48px;
+    }
+
+.list-portfolio > .li-item {
+    /* width: calc((100%-48px) / 3); */
+    width: 360px;
+    }
+
+.app {
+    padding: 32px 16px;
+    border: 1px solid var(--border-color);
+    border-top: none;
+}
+
+.app .title {
+    margin-bottom: 8px;
+}
+
+.list-portfolio .link {
+    margin: 0;
+    padding: 0;
+}
