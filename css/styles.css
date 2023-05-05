@@ -11,6 +11,7 @@
     --grey-color: #F4F4FD;
     --active-color: #404bbf;
     --border-color: #E7E9FC;
+    --border-icon-color: #8E8F99;
 }
 
 body {
@@ -172,6 +173,7 @@ img {
     gap: 24px;
 }
 
+/* Section Advantages */
 .section.advantages .li-item {
     flex-basis: calc((100%-72px) /4);
 }
@@ -189,10 +191,11 @@ img {
     flex-basis: calc((100%-48px) / 3);
 }
 
-
-.section.ourteam .li-item {
-    flex-basis: calc((100%-72px) /4);
+.icon-advantages {
+    width: 264px;
+    height: 112px;
 }
+
 
 .section {
     padding-top: 120px;
@@ -276,6 +279,10 @@ img {
     border-radius: 0px 0px 4px 4px;
 }
 
+.section.ourteam .li-item {
+    flex-basis: calc((100%-72px) /4);
+}
+
 .worker {
     padding: 32px 16px;
     text-align: center;
@@ -290,9 +297,40 @@ img {
     text-align: center;
     margin: 0;
     padding: 0;
+    margin-bottom: 8px;
 }
 
+.social-list {
+    list-style: none;
+    display: flex;
+    gap:24px;
+    padding: 0;
+    margin: 0;
+}
+
+.icon-social {
+    width: 40px;
+    height: 40px;
+}
+/* Section Clients */
+
+.clients .li-item {
+    margin: 0;
+     flex-basis: calc((100%-120px) / 6);
+    border: 1px solid var(--border-icon-color);
+        border-radius: 4px;
+     padding: 16px 32px;
+    }
+
+        .icon-logo {
+            width: 104px;
+            height: 56px;
+        }
 /* Footer */
+
+.footer .container {
+    display: flex;
+}
 
 .footer {
     background-color: var(--secondary-color);
@@ -300,6 +338,24 @@ img {
 
 .footer {
     padding: 100px 0;
+}
+.social-footer .social-list {
+    gap: 16px;
+}
+.social-footer {
+    width: 208px;
+        height: 80px;
+    padding: 0;
+    margin-left: 120px;
+}
+.social-footer-title {
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    padding:0;
+    margin: 0 0 8px 0;
 }
 
 .footer .text {
@@ -376,3 +432,8 @@ h3 {
     margin: 0;
     padding: 0;
 }
+
+
+
+
+ 
