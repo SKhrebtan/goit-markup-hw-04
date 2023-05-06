@@ -349,16 +349,16 @@ img {
 }
 
 .worker .link:hover,
-.worker .link:active {
+.worker .link:focus {
   background-color: var(--active-color);
 }
 
 .social-footer .link:hover,
-.social-footer .link:active {
+.social-footer .link:focus {
   background-color: #31d0aa;
 }
 
-/* Section Clients */
+/* Section Customers */
 
 .customers .li-item {
   height: 88px;
@@ -377,7 +377,7 @@ img {
 }
 
 .customers .link:hover,
-.customers .link:active {
+.customers .link:focus {
   color: var(--active-color);
   border-color: var(--active-color);
 }
