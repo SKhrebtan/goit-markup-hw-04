@@ -197,13 +197,18 @@ img {
   padding: 0;
 }
 
-.section.propositions .li-item {
-  flex-basis: calc((100%-48px) / 3);
+.div-icon-advantages {
+  height: 112px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--social-icon);
+  border-radius: 4px;
+  margin-bottom: 8px;
 }
 
-.icon-advantages {
-  width: 264px;
-  height: 112px;
+.section.propositions .li-item {
+  flex-basis: calc((100%-48px) / 3);
 }
 
 .section {
