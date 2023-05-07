@@ -96,8 +96,7 @@ img {
   gap: 40px;
 }
 
-.list .link,
-.list-portfolio .link {
+.list .link {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
@@ -126,10 +125,8 @@ img {
 }
 
 .address .link {
+  font-weight: 400;
   color: var(--primary-color);
-  text-decoration: none;
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 /* List */
@@ -235,7 +232,7 @@ img {
 
 .text {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--primary-color);
 }
@@ -478,6 +475,11 @@ h3 {
   flex-wrap: wrap;
   gap: 24px;
   row-gap: 48px;
+}
+
+.list-portfolio .link {
+  display: block;
+  text-decoration: none;
 }
 
 .list-portfolio > .li-item {
